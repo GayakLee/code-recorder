@@ -1,0 +1,13 @@
+{
+  "name": "typing-demo", "width": 1920, "height": 1080, "fps": 30, "seed": 12,
+  "actions": [
+    { "action": "open", "filename": "hello.py", "language": "python" },
+    { "action": "wait", "durationMs": 800 },
+    { "action": "type", "text": "def greet(name):\n    return f\"Hello, {name}!\"\n\n\nprint(greet(\"Movie\"))\n", "delayMs": 90 },
+    { "action": "wait", "durationMs": 1000 },
+    { "action": "select", "line": 1, "endLine": 2 },
+    { "action": "wait", "durationMs": 1400 },
+    { "action": "move", "line": 5, "column": 1 },
+    { "action": "wait", "durationMs": 600 }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "code-recorder",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "powershell -NoProfile -ExecutionPolicy Bypass -File launch.ps1",
+    "mcp": "node mcp.mjs",
+    "demo": "node cli.mjs examples/demo.json",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "check:git": "node tools/check-git-content.mjs",
+    "build:launcher": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-launcher.ps1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "^3.25.0"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "movie-director", "displayName": "Record Director", "publisher": "movie-tools", "version": "0.1.0", "license": "MIT",
+  "engines": { "vscode": "^1.95.0" }, "main": "./extension.cjs", "activationEvents": ["onStartupFinished"],
+  "capabilities": { "untrustedWorkspaces": { "supported": true } },
+  "contributes": {
+    "configurationDefaults": {
+      "workbench.startupEditor": "welcomePage",
+      "window.restoreWindows": "all"
+    },
+    "commands": [
+      { "command": "movie.toggleRecording", "title": "Record: Start / Stop Recording" },
+      { "command": "movie.typeIt", "title": "Record: TypeIt (Retype Code and Record)" },
+      { "command": "movie.toggleTypingSound", "title": "Record: Toggle Typing Sound" },
+      { "command": "movie.recordDemo", "title": "%movie.recordDemo%" },
+      { "command": "movie.recordScene", "title": "%movie.recordScene%" },
+      { "command": "movie.cancel", "title": "%movie.cancel%" }
+    ],
+    "keybindings": [{ "command": "movie.recordDemo", "key": "f6" }],
+    "configuration": {
+      "title": "code-recorder",
+      "properties": {
+        "movie.typingSound.enabled": { "type": "boolean", "default": false, "description": "Play keyboard clicks during TypeIt playback and include them in recorded videos." },
+        "movie.typingSound.volume": { "type": "number", "default": 0.35, "minimum": 0, "maximum": 1, "description": "Typing sound volume (0 to 1)." },
+        "movie.typingDelayMs": { "type": "number", "default": 70, "minimum": 0, "maximum": 1000, "description": "TypeIt delay per character in milliseconds." }
+      }
+    }
+  }
+}

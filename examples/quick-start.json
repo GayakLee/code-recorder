@@ -1,0 +1,12 @@
+{
+  "name": "hello-movie",
+  "typingSound": true,
+  "typingSoundVolume": 0.35,
+  "actions": [
+    { "action": "open", "filename": "hello.py", "language": "python" },
+    { "action": "wait", "durationMs": 500 },
+    { "action": "type", "text": "print(\"Hello, Movie!\")\n", "delayMs": 80 },
+    { "action": "select", "line": 1, "endLine": 1 },
+    { "action": "wait", "durationMs": 1000 }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "runtime": "C:/tools/code-recorder-runtime",
+  "source": "C:/projects/vscode-source",
+  "data": "C:/tools/code-recorder-data",
+  "extensions": "C:/tools/code-recorder-extensions",
+  "node": "C:/Program Files/nodejs/node.exe",
+  "ffmpeg": "C:/tools/ffmpeg/bin/ffmpeg.exe"
+}
